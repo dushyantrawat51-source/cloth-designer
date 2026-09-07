@@ -38,22 +38,24 @@ def get_designs(cloth_type):
             }
         ],
 
-        "handkerchief": [
-            {
-                "name": "Flower Pattern1",
-                "image":
-                "https://dushyantrawat51-source.github.io/cloth-designer/designs/floral1.png"
-            },
-            {
-                "name": "Flower Pattern2",
-                "image":"https://dushyantrawat51-source.github.io/cloth-designer/designs/floral2.png"
-            },
-            {
-                "name": "Flower Pattern3",
-                "image":
-                "https://dushyantrawat51-source.github.io/cloth-designer//designs/floral3.png"
-            }
-        ]
+       "handkerchief": [
+
+    {
+        "name": "Flower Pattern 1",
+        "image": "https://dushyantrawat51-source.github.io/cloth-designer/designs/floral1.png"
+    },
+
+    {
+        "name": "Flower Pattern 2",
+        "image": "https://dushyantrawat51-source.github.io/cloth-designer/designs/floral2.png"
+    },
+
+    {
+        "name": "Flower Pattern 3",
+        "image": "https://dushyantrawat51-source.github.io/cloth-designer/designs/floral3.png"
+    }
+
+]
     }
 
     return designs.get(cloth_type, [])
