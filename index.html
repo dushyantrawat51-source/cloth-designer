@@ -3,28 +3,160 @@
 
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
 <title>AI Cloth Designer</title>
 
 <style>
 
 body{
-font-family:Arial;
-background:#f7f7f7;
+
+background:
+linear-gradient(
+135deg,
+#ff6b6b,
+#ffd93d,
+#6bcB77,
+#4d96ff
+);
+
+font-family:Arial,sans-serif;
+
 text-align:center;
+
+padding:20px;
+
+min-height:100vh;
+
+font-size:22px;
+
 }
 
-.card{
-width:300px;
+.school{
+
+color:white;
+
+font-size:42px;
+
+font-weight:bold;
+
+text-shadow:
+2px 2px 10px black;
+
+margin-bottom:10px;
+}
+
+.project{
+
+color:white;
+
+font-size:30px;
+
+font-weight:bold;
+
+margin-bottom:20px;
+}
+
+.container{
+
 background:white;
-margin:20px auto;
-padding:15px;
+
+max-width:1000px;
+
+margin:auto;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:
+0px 0px 25px
+rgba(0,0,0,0.3);
+
+}
+
+button{
+
+background:#4d96ff;
+
+color:white;
+
+border:none;
+
+padding:15px 25px;
+
 border-radius:10px;
-box-shadow:0 0 10px #ccc;
+
+cursor:pointer;
+
+font-size:20px;
+
+margin-top:10px;
+}
+
+button:hover{
+
+background:#0066ff;
+
 }
 
 img{
-width:100%;
+
+max-width:100%;
+
 border-radius:10px;
+}
+
+.preview{
+
+max-width:350px;
+
+margin-top:15px;
+
+border-radius:15px;
+
+border:3px solid #ccc;
+}
+
+.card{
+
+background:#f8f8f8;
+
+width:300px;
+
+display:inline-block;
+
+margin:15px;
+
+padding:15px;
+
+border-radius:15px;
+
+box-shadow:
+0px 0px 10px #ccc;
+
+vertical-align:top;
+}
+
+.card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+}
+
+h3{
+
+font-size:24px;
+}
+
+#result{
+
+margin-top:25px;
 }
 
 </style>
@@ -33,9 +165,39 @@ border-radius:10px;
 
 <body>
 
-<h1>
-👕 AI Cloth Designer
-</h1>
+<div class="school">
+
+🏫 ALPINE PUBLIC SCHOOL, KHURJA
+
+</div>
+
+<div class="project">
+
+👕 AI CLOTH DESIGNER
+
+</div>
+
+<div class="container">
+
+<p>
+
+Upload your cloth image and get
+printing design suggestions.
+
+</p>
+
+<input
+type="file"
+id="clothImage"
+accept="image/*">
+
+<br><br>
+
+<img
+id="preview"
+class="preview">
+
+<br><br>
 
 <select id="cloth">
 
@@ -63,14 +225,29 @@ Suggest Designs
 
 </div>
 
+</div>
+
 <script>
+
+document
+.getElementById("clothImage")
+.onchange = function(event){
+
+document
+.getElementById("preview")
+.src =
+URL.createObjectURL(
+event.target.files[0]
+);
+
+};
 
 async function scanCloth(){
 
 const cloth =
-document.getElementById(
-"cloth"
-).value;
+document
+.getElementById("cloth")
+.value;
 
 const data =
 new FormData();
@@ -94,10 +271,12 @@ await response.json();
 
 let html =
 
-`<h2>
-Detected:
+`
+<h2>
+Detected Cloth:
 ${result.cloth}
-</h2>`;
+</h2>
+`;
 
 result.designs.forEach(
 design => {
@@ -111,21 +290,45 @@ html +=
 ${design.name}
 </h3>
 
-<img src="<img
+<img
 src="${design.image}"
-style="
-width:300px;
-border-radius:10px;">
+alt="${design.name}">
+
+<br><br>
+
+<button onclick="
+applyDesign(
+'${design.name}'
+)
+">
+
+Apply Design
+
+</button>
 
 </div>
 `;
 
 });
 
-document.getElementById(
-"result"
-).innerHTML =
+document
+.getElementById("result")
+.innerHTML =
 html;
+
+}
+
+function applyDesign(name){
+
+alert(
+
+"✅ Design Selected:\n\n"
+
++ name +
+
+"\n\nThis design can now be printed on the selected cloth."
+
+);
 
 }
 
