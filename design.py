@@ -3,59 +3,77 @@ def get_designs(cloth_type):
     designs = {
 
         "tshirt": [
+
             {
-                "name": "Abstract Design",
-                "image":
-                "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
+                "name": "Abstract Design 1",
+                "image": "designs/abstract1.png"
             },
+
             {
-                "name": "Spiral Design",
-                "image":
-                "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+                "name": "Abstract Design 2",
+                "image": "designs/abstract2.png"
             },
+
             {
                 "name": "Nature Design",
-                "image":
-                "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+                "image": "designs/nature1.png"
+            },
+
+            {
+                "name": "Spiral Design",
+                "image": "designs/spiral1.png"
             }
+
         ],
 
         "bedsheet": [
+
             {
-                "name": "Floral Design",
-                "image":
-                "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+                "name": "Floral Design 1",
+                "image": "designs/floral1.png"
             },
+
+            {
+                "name": "Floral Design 2",
+                "image": "designs/floral2.png"
+            },
+
+            {
+                "name": "Mandala Design",
+                "image": "designs/mandala1.png"
+            },
+
             {
                 "name": "Rangoli Design",
-                "image":
-                "https://images.unsplash.com/photo-1517694712202-14dd9538aa97"
-            },
-            {
-                "name": "Mandala Pattern",
-                "image":
-                "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
+                "image": "designs/rangoli1.png"
             }
+
         ],
 
-       "handkerchief": [
+        "handkerchief": [
 
-    {
-        "name": "Flower Pattern 1",
-        "image": "https://dushyantrawat51-source.github.io/cloth-designer/designs/floral1.png"
-    },
+            {
+                "name": "Flower Pattern 1",
+                "image": "designs/floral1.png"
+            },
 
-    {
-        "name": "Flower Pattern 2",
-        "image": "https://dushyantrawat51-source.github.io/cloth-designer/designs/floral2.png"
-    },
+            {
+                "name": "Flower Pattern 2",
+                "image": "designs/floral2.png"
+            },
 
-    {
-        "name": "Flower Pattern 3",
-        "image": "https://dushyantrawat51-source.github.io/cloth-designer/designs/floral3.png"
-    }
+            {
+                "name": "Flower Pattern 3",
+                "image": "designs/floral3.png"
+            },
 
-]
+            {
+                "name": "Border Pattern",
+                "image": "designs/border1.png"
+            }
+
+        ]
+
     }
 
     return designs.get(cloth_type, [])
