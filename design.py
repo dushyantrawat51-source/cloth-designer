@@ -42,17 +42,17 @@ def get_designs(cloth_type):
             {
                 "name": "Flower Pattern1",
                 "image":
-                "https://designs/floral1.png"
+                "https:./designs/floral1.png"
             },
             {
                 "name": "Flower Pattern2",
                 "image":
-                "https://designs/floral2.png"
-            }
+                "https:./designs/floral2.png"
+            },
             {
                 "name": "Flower Pattern3",
                 "image":
-                "https://designs/floral3.png"
+                "https:./designs/floral3.png"
             }
         ]
     }
