@@ -40,14 +40,19 @@ def get_designs(cloth_type):
 
         "handkerchief": [
             {
-                "name": "Flower Corner",
+                "name": "Flower Pattern1",
                 "image":
-                "https://images.unsplash.com/photo-1441986300917-64674bd600d8"
+                "https://designs/floral1.png"
             },
             {
-                "name": "Border Design",
+                "name": "Flower Pattern2",
                 "image":
-                "https://images.unsplash.com/photo-1521572267360-ee0c2909d518"
+                "https://designs/floral2.png"
+            }
+            {
+                "name": "Flower Pattern3",
+                "image":
+                "https://designs/floral3.png"
             }
         ]
     }
