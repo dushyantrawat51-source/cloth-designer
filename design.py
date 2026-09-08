@@ -5,23 +5,39 @@ def get_designs(cloth_type):
         "tshirt": [
 
             {
-                "name": "Abstract Design 1",
-                "image": "designs/abstract1.png"
+                "name": "Rangoli",
+                "image": "rangoli/r1.jpeg"
             },
 
             {
-                "name": "Abstract Design 2",
-                "image": "designs/abstract2.png"
+                 "name": "Rangoli",
+                "image": "rangoli/r2.jpeg"
             },
 
             {
-                "name": "Nature Design",
-                "image": "designs/nature1.png"
+                 "name": "Rangoli",
+                "image": "rangoli/r3.jpeg"
             },
 
             {
-                "name": "Spiral Design",
-                "image": "designs/spiral1.png"
+                 "name": "Rangoli",
+                "image": "rangoli/r4.jpeg"
+            },
+            {
+                 "name": "Rangoli",
+                "image": "rangoli/r5.jpeg"
+            },
+            {
+                 "name": "Floral Design",
+                "image": "floral/Designe1.png"
+            },
+             {
+                 "name": "Floral Design",
+                "image": "floral/Designe2.png"
+            },
+             {
+                 "name": "Floral Design",
+                "image": "floral/Designe3.png"
             }
 
         ],
