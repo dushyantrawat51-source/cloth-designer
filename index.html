@@ -79,6 +79,29 @@ button:hover{
 
     border: 3px solid #ccc;
 }
+    #mockup{
+
+    position:relative;
+
+    display:inline-block;
+
+}
+
+.designOverlay{
+
+    position:absolute;
+
+    top:25%;
+
+    left:25%;
+
+    width:50%;
+
+    opacity:0.6;
+
+    pointer-events:none;
+
+}
 
 .card{
 
@@ -148,11 +171,20 @@ capture="environment">
 
 <br><br>
 
-<h2>Uploaded Cloth</h2>
+<h2>Cloth Preview</h2>
+
+<div id="mockup">
 
 <img
 id="preview"
 class="preview">
+
+<img
+id="designPreview"
+class="designOverlay"
+style="display:none;">
+
+</div>
 
 <br><br>
 
@@ -300,20 +332,17 @@ image,
 name
 ){
 
-    document
-    .getElementById("designPreview")
-    .src =
-    image;
+    const design =
 
-    document
-    .getElementById("designPreview")
-    .style.display =
+    document.getElementById(
+    "designPreview"
+    );
+
+    design.src = image;
+
+    design.style.display =
     "block";
 
-    alert(
-    "✅ Design Selected:\n\n" +
-    name
-    );
 }
 
 </script>
