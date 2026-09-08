@@ -45,23 +45,35 @@ def get_designs(cloth_type):
         "bedsheet": [
 
             {
-                "name": "Floral Design 1",
-                "image": "designs/floral1.png"
+                "name": "Leaf Design",
+                "image": "leaf/leaf.jpeg"
             },
 
             {
-                "name": "Floral Design 2",
-                "image": "designs/floral2.png"
+                "name": "Leaf Design",
+                "image": "leaf/leaf2.jpeg"
+                
             },
 
             {
-                "name": "Mandala Design",
-                "image": "designs/mandala1.png"
+                "name": "Line Design",
+                "image": "line/line.jpeg"
             },
 
             {
-                "name": "Rangoli Design",
-                "image": "designs/rangoli1.png"
+                 "name": "Line Design",
+                "image": "line/line2.jpeg"
+                
+            },
+             {
+                 "name": "Line Design",
+                "image": "line/line3.jpeg"
+                
+            },
+             {
+                 "name": "Line Design",
+                "image": "line/zigzag.jpeg"
+                
             }
 
         ],
@@ -69,23 +81,26 @@ def get_designs(cloth_type):
         "handkerchief": [
 
             {
-                "name": "Flower Pattern 1",
-                "image": "designs/floral1.png"
+                "name": "Spiral",
+                "image": "spiral/s1.jpeg"
             },
 
             {
-                "name": "Flower Pattern 2",
-                "image": "designs/floral2.png"
+                "name": "Spiral",
+                "image": "spiral/s1.jpeg"
+                
             },
 
             {
-                "name": "Flower Pattern 3",
-                "image": "designs/floral3.png"
+                "name": "Spiral",
+                "image": "spiral/s1.jpeg"
+                
             },
 
             {
-                "name": "Border Pattern",
-                "image": "designs/border1.png"
+                "name": "Spiral",
+                "image": "spiral/s1.jpeg"
+                
             }
 
         ]
