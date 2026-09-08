@@ -87,19 +87,19 @@ def get_designs(cloth_type):
 
             {
                 "name": "Spiral",
-                "image": "spiral/s1.jpeg"
+                "image": "spiral/s2.jpeg"
                 
             },
 
             {
                 "name": "Spiral",
-                "image": "spiral/s1.jpeg"
+                "image": "spiral/s3.jpeg"
                 
             },
 
             {
                 "name": "Spiral",
-                "image": "spiral/s1.jpeg"
+                "image": "spiral/s4.jpeg"
                 
             }
 
