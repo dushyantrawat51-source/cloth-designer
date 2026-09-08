@@ -193,9 +193,16 @@ accept="image/*"
 capture="environment">
 <br><br>
 
+<h2>Selected Design Preview</h2>
+
 <img
-id="preview"
-class="preview">
+id="designPreview"
+style="
+max-width:350px;
+border-radius:15px;
+display:none;
+margin-top:20px;
+">
 
 <br><br>
 
@@ -217,7 +224,11 @@ Handkerchief
 
 <br><br>
 
-<button onclick="scanCloth()">
+<button onclick="
+applyDesign(
+'${design.image}',
+'${design.name}'
+)">
 Suggest Designs
 </button>
 
@@ -318,17 +329,19 @@ html;
 
 }
 
-function applyDesign(name){
+function applyDesign(image,name)
+{
 
-alert(
+document
+.getElementById("designPreview")
+.src = image;
 
-"✅ Design Selected:\n\n"
+document.getElementById("designPreview")
+.style.display ="block";
 
-+ name +
+alert("✅ Design Applied\n\n"+ name);
 
-"\n\nThis design can now be printed on the selected cloth."
-
-);
+}
 
 }
 
