@@ -326,25 +326,61 @@ async function scanCloth(){
 
     }
 }
-
 function applyDesign(
 image,
 name
 ){
 
     const design =
-
     document.getElementById(
     "designPreview"
     );
 
-    design.src = image;
+    const cloth =
+    document.getElementById(
+    "cloth"
+    ).value;
 
     design.style.display =
     "block";
 
-}
+    if(
+        cloth === "bedsheet"
+    ){
 
+        design.style.top =
+        "0%";
+
+        design.style.left =
+        "0%";
+
+        design.style.width =
+        "100%";
+
+        design.style.height =
+        "100%";
+
+    }
+
+    else{
+
+        design.style.top =
+        "8%";
+
+        design.style.left =
+        "8%";
+
+        design.style.width =
+        "84%";
+
+        design.style.height =
+        "84%";
+
+    }
+
+    design.src = image;
+
+}
 </script>
 
 </body>
