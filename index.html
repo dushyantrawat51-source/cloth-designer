@@ -331,10 +331,8 @@ async function scanCloth(){
 
     }
 }
-function applyDesign(
-image,
-name
-){
+function applyDesign(image,name)
+{
 
     const design =
     document.getElementById(
@@ -383,7 +381,14 @@ name
 
     }
 
-    design.src = image;
+    design.style.backgroundImage =
+    `url(${image})`;
+
+    design.style.backgroundRepeat =
+    "repeat";
+
+    design.style.backgroundSize =
+    "80px 80px";
 
 }
 </script>
